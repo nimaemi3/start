@@ -1,11 +1,90 @@
-<html>
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-<title>hello</title>
+  <meta charset="UTF-8">
+  <title>hello</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+      background: linear-gradient(135deg, #f5e6fa 0%, #fff 100%);
+      min-height: 100vh;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 40px 0 30px 0;
+      letter-spacing: 2px;
+      font-size: 2.2rem;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      padding: 0;
+    }
+    nav a {
+      color: #222;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 18px 40px;
+      transition: color 0.2s;
+      border-bottom: 3px solid transparent;
+    }
+    nav a:hover {
+      color: #e4007f;
+      border-bottom: 3px solid #e4007f;
+    }
+    .main-visual {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      height: 340px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+      letter-spacing: 1.5px;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 18px 0;
+      font-size: 1rem;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+    @media (max-width: 700px) {
+      .main-visual { font-size: 1.3rem; height: 180px; }
+      nav a { padding: 12px 18px; font-size: 1rem; }
+      header { font-size: 1.3rem; padding: 25px 0 18px 0; }
+    }
+  </style>
 </head>
 <body>
-<h1>내 생에 첫 홈페이지</h1>
-<a href="about/">about</a>
-<a href="product/">product</a>
-<a href="contact/">contact</a>
+  <header>
+    내 생에 첫 홈페이지
+  </header>
+  <nav>
+    <a href="about/">about</a>
+    <a href="product/">product</a>
+    <a href="contact/">contact</a>
+  </nav>
+  <div class="main-visual">
+    Welcome to my homepage!
+  </div>
+  <footer>
+    &copy; 2025 내 생에 첫 홈페이지
+  </footer>
 </body>
 </html>
